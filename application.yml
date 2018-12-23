@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mytest
+    username: root
+    password: root
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    content-type: text/html
+    mode: HTML5
+
+server:
+  port: 8011
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
+    map-underscore-to-camel-case: true
+logging:
+  file: logs/spring-boot-logging.log
+  level:
+    com.ican.draw.dao: DEBUG
+
